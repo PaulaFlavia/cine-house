@@ -21,7 +21,7 @@
             "Sigourney Weaver"
         ],
         "duracao": 160,
-        "emCartaz": false
+        "emCartaz": true
     },
     {
         "codigo": 3,
@@ -57,15 +57,6 @@
         ],
         "anoDeLancamento": 2019,
         "emCartaz": false
-    },
-    {
-        "titulo": "A jornada de uma turma"
-    },
-    {
-        "titulo": "A jornada de uma turma"
-    },
-    {
-        "titulo": "A jornada de uma turma"
     },
     {
         "codigo": 6,

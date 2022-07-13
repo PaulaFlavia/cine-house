@@ -1,11 +1,26 @@
 
-const mostrarFilmesEmCartaz = (filmes) => {
+const fs = require('fs');
+const path = require('path');
+const catalogo = require('../database/catalogo.json');
 
-    // 1 - filtrar os filmes em cartaz
+function mostrarFilmesEmCartaz(catalogo) {
 
+   let arquivo = path.resolve(__dirname + '/../database/catalogo.json');
+   
+   let lista = catalogo.map(filme => {if(filme.emCartaz){
+    return filme.titulo;}});
+    console.log(lista);
+   }
 
-    // 2 - mostrar os filmes filtrados!
+       
+   
 
-}
+// mostrarFilmesEmCartaz(catalogo);
+// module.exports = mostrarFilmesEmCartaz;
 
-module.exports = mostrarFilmesEmCartaz;
+// let listarFilmesEmCartaz = () => {
+//    let filmesEmCartaz = catalogo.filter(filme => filme.emCartaz);
+//    listarTodosOsFilmes(filmesEmCartaz);
+// }
+
+// // listarFilmesEmCartaz();
